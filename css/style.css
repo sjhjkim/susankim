@@ -1,0 +1,93 @@
+html {height:100%;width:100%;}
+
+body {
+    overflow:scroll;
+    height: 100%;
+    font-family: Morion;
+}
+
+@font-face{
+    font-family: Morion;
+    src: url(fonts/Morion-Regular.otf);
+}
+/*———————————GENERAL LAYOUT————————————*/
+.full-width-container {
+width: 100%;
+max-width: 100%;
+clear: both;
+margin: 0 auto;
+}
+
+.physical {
+    background: black;
+    width: 100%;
+    height: 200px;
+
+}
+
+.digital{
+    background: red;
+    width: 100%;
+    height: 200px;
+
+}
+
+.row{
+ position: relative;
+  width: 100%;
+     margin: 0 auto;
+ box-sizing: border-box;
+background: grey; }
+
+
+/*———————————RESIZE FEATURES————————————
+/*html,
+body,
+#pane,
+#ghostpane {
+    cursor: url('../images/cursor.png'), auto;
+}*/
+
+#pane {
+    background: url('../images/resize.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 30%;
+    height: 65%;
+    top: 15%;
+    left: 60%;
+    margin: 0;
+    padding: 0;
+    z-index: 99;
+    border: 4px solid white;
+    opacity: 100%;
+}
+
+#title {
+    font-family: monospace;
+    background: white;
+    color: white;
+    font-size: 24px;
+    height: 0px;
+    text-align: center;
+}
+
+/*#ghostpane {
+    background: #999;
+    opacity: 0.2;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    z-index: 98;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}*/
