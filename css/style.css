@@ -1,93 +1,216 @@
-html {height:100%;width:100%;}
+html {
+  font-size: 62.5%;
+  font-feature-settings: 'kern' 1, 'liga' 1, 'pnum' 1, 'ss01' 1, 'ss03' 1;
+  -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+}
 
 body {
-    overflow:scroll;
-    height: 100%;
-    font-family: Morion;
+    color:#FFFFFF;
+    font-size: 1.6rem;
+    letter-spacing: 0.05px;
+    line-height: 1.5;
+    font-family: sporting_grot;
+    font-style: normal;
+    font-weight: normal;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-kerning: normal;
 }
 
-@font-face{
-    font-family: Morion;
-    src: url(fonts/Morion-Regular.otf);
-}
-/*———————————GENERAL LAYOUT————————————*/
-.full-width-container {
-width: 100%;
-max-width: 100%;
-clear: both;
-margin: 0 auto;
+#main {
+  background-image: url('../images/landing.jpg');
+  width: 100vw;
+  height: 250vh;
+  background-size: cover;
 }
 
-.physical {
-    background: black;
-    width: 100%;
-    height: 200px;
-
+/* FONTS
+———————————————————————————— */
+@font-face {
+    font-family: sporting_grot;
+    src: url('fonts/sporting_grotesque_normal.otf');
 }
 
-.digital{
-    background: red;
-    width: 100%;
-    height: 200px;
+/* TYPOGRAPHY
+———————————————————————————— */
 
+
+/* WEBSITE LAYOUT
+———————————————————————————— */
+.back {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  z-index: 3;
+  top:4vh;
+  left:2vw;
+  display: inline-block;
 }
 
-.row{
- position: relative;
+#noscroll {
+  width: 50%;
+  height: 100vh;
+  margin: 0 50%;
+  position: fixed;
+}
+
+#scroll {
+  background-color: white;
+  width: 50%;
+  height: 100vh;
+  margin: 0 0;
+  position: absolute;
+}
+
+#noscroll-resize {
+  width: 50%;
+  height: 2000px;
+  margin: 0 50%;
+}
+
+/* RESPONSIVE IMAGES
+———————————————————————————— */
+img {
   width: 100%;
-     margin: 0 auto;
- box-sizing: border-box;
-background: grey; }
-
-
-/*———————————RESIZE FEATURES————————————
-/*html,
-body,
-#pane,
-#ghostpane {
-    cursor: url('../images/cursor.png'), auto;
-}*/
-
-#pane {
-    background: url('../images/resize.jpg');
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 30%;
-    height: 65%;
-    top: 15%;
-    left: 60%;
-    margin: 0;
-    padding: 0;
-    z-index: 99;
-    border: 4px solid white;
-    opacity: 100%;
+  height: auto;
 }
 
-#title {
-    font-family: monospace;
-    background: white;
-    color: white;
-    font-size: 24px;
-    height: 0px;
-    text-align: center;
+/* HOVER COMPONENTS
+———————————————————————————— */
+#page-drag1 {
+  width: 23%;
+  position: absolute;
+  top:51vh;
+  left: 44vw;
+  opacity: 0;
 }
 
-/*#ghostpane {
-    background: #999;
-    opacity: 0.2;
-    width: 100%;
-    height: 100%;
-    top: 0%;
-    left: 0%;
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    z-index: 98;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -ms-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
-}*/
+#page-drag1:hover {
+  opacity: 100;
+}
+
+#page-drag2 {
+  width: 23.5%;
+  position: absolute;
+  top:98vh;
+  left: 30vw;
+  opacity: 0;
+}
+
+#page-drag2:hover {
+  opacity: 100;
+}
+
+#page-scroll {
+  width: 28.2%;
+  position: absolute;
+  left: 72vw;
+  opacity: 0;
+}
+
+#page-scroll:hover {
+  opacity: 100;
+}
+
+#page-resize {
+  width: 55%;
+  position: absolute;
+  left: 21.5vw;
+  top:177.5vh;
+  opacity: 0;
+}
+
+#page-resize:hover {
+  opacity: 100;
+}
+
+#page-point {
+  width: 9%;
+  position: absolute;
+  left: 28.5vw;
+  top:71.5vh;
+  opacity: 0;
+}
+
+#page-point:hover {
+  opacity: 100;
+}
+
+/* MARGINS
+———————————————————————————— */
+.m-10 {
+  margin: 2.5em 0;
+}
+
+/* BACKGROUND COLOR
+———————————————————————————— */
+.drag {
+    background-color: #09A14E;
+}
+
+.scroll {
+    background-color: #FFA52D;
+}
+
+.resize {
+    background-color: #FF7E81;
+}
+
+.point {
+  background-color: #0090D0;
+}
+
+/* VIMEO RESPONSIVE EMBED
+———————————————————————————— */
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* GOOGLE MAP COMPONENT
+———————————————————————————— */
+#map {
+  height: 60%;
+}
+
+/* RESIZE COMPONENT
+———————————————————————————— */
+.overlay {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#containment-wrapper {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  margin-left: 0rem;
+}
+
+.demo {
+  border: 3px solid white;
+  cursor: all-scroll;
+}
+
+/* LONG SCROLL INTERACTION
+———————————————————————————— */
+#scroll-overlay {
+  overflow-y: scroll;
+  z-index: 2;
+  height: 500px;
+}
