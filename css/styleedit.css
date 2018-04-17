@@ -178,7 +178,7 @@ border: 1px solid black;
   width: 23%;
   position: absolute;
   top:25.5vw;
-  left: 43.5vw;
+  left: 44vw;
   opacity: 00;
   z-index: 2;
 }
@@ -203,7 +203,7 @@ border: 1px solid black;
 #page-scroll {
   width: 28%;
   position: absolute;
-  left: 71.3vw;
+  left: 72vw;
   top:-0.1vw;
   opacity: 0;
   z-index: 2;
@@ -214,7 +214,7 @@ border: 1px solid black;
 }
 
 #page-resize {
-  width: 60%;
+  width: 59%;
   position: absolute;
   left: 20vw;
   top:88vw;
@@ -229,8 +229,8 @@ border: 1px solid black;
 #page-point {
   width: 9.3%;
   position: absolute;
-  left: 27.9vw;
-  top:35.8vw;
+  left: 28.3vw;
+  top:36.2vw;
   opacity: 00;
   z-index: 2;
 }
@@ -256,7 +256,7 @@ border: 1px solid black;
   width: 26%;
   position: absolute;
   left: 3vw;
-  top:25.9vw;
+  top:26.3vw;
   opacity: 00;
   z-index: 1;
 }
