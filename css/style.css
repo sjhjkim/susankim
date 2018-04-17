@@ -6,9 +6,9 @@ html {
 
 body {
     color:#FFFFFF;
-    font-size: 1.6rem;
+    font-size: 10rem;
     letter-spacing: 0.05px;
-    line-height: 1.5;
+    line-height: 0.1;
     font-family: sporting_grot;
     font-style: normal;
     font-weight: normal;
@@ -27,17 +27,30 @@ body {
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 600px) {
+    #main #page-drag #page-drag #page-scroll #page-resize #page-point #page-thanks
+  { visibility:hidden;
+
+  }}
 /* FONTS
 ———————————————————————————— */
 @font-face {
-    font-family: sporting_grot;
-    src: url('fonts/sporting_grotesque_normal.otf');
+    font-family: texgyreher;
+    src: url('../fonts/texgyreheroscn-regular.otf');
 }
 
 /* TYPOGRAPHY
 ———————————————————————————— */
 
-
+.gesture3{
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  z-index: 3;
+  top:4vh;
+  left:46.5%;
+  display: inline-block;
+}
 /* WEBSITE LAYOUT
 ———————————————————————————— */
 .back {
@@ -77,7 +90,7 @@ img {
   width: 100%;
   height: auto;
 }
-/* HOVER COMPONENTS P2
+/* POINT HOVER COMPONENTS
 ———————————————————————————— */
 
 .lol {
@@ -420,7 +433,7 @@ opacity: 00;
   position: absolute;
   top:49vw;
      opacity: 0;
-  left: 30vw;
+  left: 29vw;
 }
 
 #page-drag2:hover {
@@ -430,7 +443,7 @@ opacity: 00;
 #page-scroll {
   width: 28%;
   position: absolute;
-  left: 72vw;
+  left: 71.5vw;
   opacity: 0;
 }
 
@@ -441,7 +454,7 @@ opacity: 00;
 #page-resize {
   width: 60%;
   position: absolute;
-  left: 21vw;
+  left: 20vw;
   top:88vw;
   opacity: 0;
 }
@@ -451,10 +464,10 @@ opacity: 00;
 }
 
 #page-point {
-  width: 9%;
+  width: 9.3%;
   position: absolute;
-  left: 28.5vw;
-  top:36.3vw;
+  left: 27.9vw;
+  top:35.8vw;
   opacity: 00;
 }
 
@@ -462,18 +475,27 @@ opacity: 00;
   opacity: 100;
 }
 
+#page-thanks {
+  width: 25%;
+  position: absolute;
+  left: 1vw;
+  top:29.9vw;
+  opacity: 00;
+}
 
+#page-thanks:hover {
+  opacity: 100;
+}
 
 
 @media screen and (max-width: 1440px) {
 
-    #page-scroll {
+#page-scroll {
   width: 28%;
   position: absolute;
   left: 71.5vw;
   opacity: 00;
-}
-    }
+}}
 
 @media screen and (max-width: 900px) {
 
@@ -482,8 +504,7 @@ opacity: 00;
   position: absolute;
   top:25.5vw;
   left: 43.5vw;
-opacity: 0;
-
+  opacity: 0;
 }
 
 #page-drag1:hover {
@@ -532,62 +553,66 @@ opacity: 0;
   top:35.5vw;
   opacity: 00;
 }
+
 #page-point:hover {
   opacity: 100;
-    }}
-
-
+}}
 
 /* MARGINS
 ———————————————————————————— */
 .m-10 {
-  margin: 2em 0;
+  margin: 0.95em 0;
 }
 
-    .m-11{
-  margin: 4em 0;
+.m-12{
+  margin: 0em 0 0.95em;
 }
 
-    .m-12{
-  margin: 4em 0 3em;
+.m-13{
+  margin: 5.8vw 0 0em;
 }
 
 /* BACKGROUND COLOR
 ———————————————————————————— */
 .drag {
-    background-color: #09A14E;
+    background-color: #000;
 }
 
 .scroll {
-    background-color: #FFA52D;
+    background-color: #000;
 }
 
 .resize {
-    background-color: #FF7E81;
+    background-color: #000;
 }
 
 .point {
-  background-color: #0090D0;
+  background-color: #000;
 }
 
+.img-border {
+border: 1px solid black;
+}
 /* VIMEO RESPONSIVE EMBED
 ———————————————————————————— */
 .embed-container {
   position: relative;
   padding-bottom: 56.25%;
-
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
   height: 0;
   overflow: hidden;
   max-width: 100%;
-    margin:0;
+  margin: 0;
 }
 
 .embed-top{
-margin-top: 20%;
+margin-top: 0.85em;
 }
 
 .embed-bottom{
-margin-bottom: 3em
+border-bottom: 1px solid black;
 }
 
 .embed-container iframe, .embed-container object, .embed-container embed {
@@ -604,13 +629,14 @@ margin-bottom: 3em
 #map {
   height: 60%;
 }
-.map-small{
+/*.map-small{
 display:block
         }
 
 .map-large{
 display:none
-        }
+        }*/
+    
 /* RESIZE COMPONENT
 ———————————————————————————— */
 .overlay {
@@ -638,7 +664,8 @@ display:none
 #scroll-overlay{
   overflow-y: scroll;
   z-index: 2;
-  height: 41vw;
+  height: 38vw;
+    margin-top: 1em;
 }
 
 .scroll-small{
@@ -653,23 +680,13 @@ display:none;
 /* MARGINS
 /* MEDIA QUERY FIXES
 ———————————————————————————— */
-    @media screen and (min-width: 1440px) {
+    @media screen and (max-width: 1366px) {}
 
-.embed-top{
- margin-top: 12%;
-        }
+    @media screen and (max-width: 1024px) {}
 
-.embed-bottom{
- margin-bottom: 12%;
-        }
+    @media screen and (max-width: 900px) {}
 
-
-
-#map {
-  height: 90%;
-}
-
-.map-small{
+/*.map-small{
 display:none;
         }
 
@@ -684,14 +701,4 @@ display:none;
 .scroll-large{
 display:block;
         }
-
-
-.m-11{
-  margin: 8em 0;
-}
-
-.m-12{
-  margin: 7em 0 7em;
-}
-
-    }
+*/

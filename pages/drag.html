@@ -13,7 +13,7 @@
 <!-- CSS -->
 <link rel="stylesheet" href="../css/normalize.css">
 <link rel="stylesheet" href="../css/flexboxgrid.css">
-<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/styleedit.css">
 
 <!-- Favicon -->
 <link rel="icon" type="image/png" href="images/favicon.png">
@@ -23,18 +23,19 @@
 <body>
 
 <a class="return" href="../index.html"><img class="back" src="../images/svg/back.svg"></a>
+<img class="gesture" src="../images/svg/gesture1.svg">
 
   <section id="scroll">
     <div class="row center-xs">
         <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-          <div class="embed-container m-10 embed-top">
+          <div class="embed-container embed-top">
             <iframe src="https://player.vimeo.com/video/264152599?background=1autoplay=1&loop=1&color=19212E&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
-          <div class="embed-container m-10 embed-bottom">
+          <div class="embed-container embed-bottom">
             <iframe src="https://player.vimeo.com/video/264152637?background=1autoplay=1&loop=1&color=19212E&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
-            <img class="m-10" src="../images/drag1.jpg">
-            <img class="m-12" src="../images/drag2.jpg">
+            <img class="m-10 img-border" src="../images/drag1.jpg">
+            <img class="m-12 img-border" src="../images/drag2.jpg">
         </div>
     </div>
   </section>
@@ -42,19 +43,16 @@
   <section class= "drag" id="noscroll">
     <div class="row center-xs">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 m-11">
-          CANVAS DRAG
+          canvas
         </div>
     </div>
 
-    <div class="row center-xs">
-      <div class="col-xs-9 col-sm-9 col-md-9 col-lg-11 map-small">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12282.141729782175!2d0.7156148240526283!3d40.73350250220316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sca!4v1523401947917" width="500" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>
-
-<div class="col-xs-9 col-sm-9 col-md-9 col-lg-11 map-large">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12282.141729782175!2d0.7156148240526283!3d40.73350250220316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sca!4v1523401947917" width="700" height="700" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div class="row center-xs map">
+      <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12282.141729782175!2d0.7156148240526283!3d40.73350250220316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sca!4v1523401947917" width="80%" height="55%" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </div>
+
   </section>
 </body>
 </html>

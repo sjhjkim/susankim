@@ -1,0 +1,590 @@
+html {
+  font-size: 62.5%;
+  font-feature-settings: 'kern' 1, 'liga' 1, 'pnum' 1, 'ss01' 1, 'ss03' 1;
+  -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+}
+
+body {
+    color:#FFFFFF;
+    font-size: 5em;
+    letter-spacing: 0.05px;
+    line-height: 0.1;
+    font-family: texgyreher;
+    font-style: normal;
+    font-weight: normal;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-kerning: normal;
+}
+
+#main {
+  background-image: url('../images/landing.jpg');
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+}
+
+/* FONTS
+———————————————————————————— */
+@font-face {
+    font-family: texgyreher;
+    src: url('../fonts/texgyreheroscn-regular.otf');
+}
+
+/* WEBSITE LAYOUT
+———————————————————————————— */
+.back {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  z-index: 3;
+  top:4vh;
+  left:2vw;
+  display: inline-block;
+}
+
+.gesture{
+    display: block;
+    left: 46.5%;
+    right: 46.5%;
+    width: 7%;
+    position: fixed;
+    z-index: 3;
+    top:4vh;
+  }
+
+#noscroll {
+  width: 50%;
+  height: 100vh;
+  margin: 0 50%;
+  position: fixed;
+}
+
+#scroll {
+  background-color: white;
+  width: 50%;
+  height: 100vh;
+  margin: 0 0;
+  position: absolute;
+}
+
+#noscroll-resize {
+  width: 50%;
+  height: 2000px;
+  margin: 0 50%;
+}
+
+.drag {
+    background-color: #000;
+}
+
+.scroll {
+    background-color: #000;
+}
+
+.resize {
+    background-color: #000;
+}
+
+.point {
+  background-color: #000;
+}
+/* MARGINS
+———————————————————————————— */
+.m-10 /*gloabl top spacing*/ {
+  margin: 1.3em 0 ;
+}
+
+.m-11 /*bottom img top spacing*/{
+  margin: 1.7em 0 0 0;
+}
+
+.m-12 /*bottom img top spacing*/{
+  margin: 0em 0 1.3em;
+}
+
+.scroll-type /*bottom scroll type top spacing*/{
+  margin: 6vw 0 0em;
+  bottom:0;
+}
+
+.drag-type /*bottom scroll type top spacing*/{
+  margin: 8.4vw 0 0em;
+  bottom:0;
+}
+
+.resize-type /*bottom scroll type top spacing*/{
+  bottom:0;
+  margin: -2.7vw 0 0em;
+}
+/* VIMEO RESPONSIVE EMBED
+———————————————————————————— */
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 0;
+}
+
+.embed-bottom{
+  border-bottom: 1px solid black;
+  margin-bottom: 0em;
+}
+
+.embed-top{
+  margin-top: 1.3em;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin:0;
+}
+
+/* RESPONSIVE IMAGES
+———————————————————————————— */
+img {
+  width: 100%;
+  height: auto;
+}
+
+.img-border {
+border: 1px solid black;
+}
+
+/* LONG SCROLL INTERACTION
+———————————————————————————— */
+#scroll-overlay{
+  overflow-y: scroll;
+  z-index: 2;
+  height: 38vw;
+  margin-top: 1em;
+}
+
+/* HOVER COMPONENTS
+———————————————————————————— */
+#page-drag1 {
+  width: 23%;
+  position: absolute;
+  top:25.5vw;
+  left: 43.5vw;
+  opacity: 00;
+  z-index: 2;
+}
+
+#page-drag1:hover {
+  opacity: 100;
+}
+
+#page-drag2 {
+  width: 25%;
+  position: absolute;
+  top:49vw;
+  opacity: 0;
+  left: 29vw;
+  z-index: 2;
+}
+
+#page-drag2:hover {
+  opacity: 100;
+}
+
+#page-scroll {
+  width: 28%;
+  position: absolute;
+  left: 71.3vw;
+  top:-0.1vw;
+  opacity: 0;
+  z-index: 2;
+}
+
+#page-scroll:hover {
+  opacity: 100;
+}
+
+#page-resize {
+  width: 60%;
+  position: absolute;
+  left: 20vw;
+  top:88vw;
+  opacity: 0;
+  z-index: 2;
+}
+
+#page-resize:hover {
+  opacity: 100;
+}
+
+#page-point {
+  width: 9.3%;
+  position: absolute;
+  left: 27.9vw;
+  top:35.8vw;
+  opacity: 00;
+  z-index: 2;
+}
+
+#page-point:hover {
+  opacity: 100;
+}
+
+/*#page-thanks {
+  width: 26%;
+  position: absolute;
+  left: 3vw;
+  top:2.9vw;
+  opacity: 00;
+  z-index: 1;
+}
+
+#page-thanks:hover {
+  opacity: 100;
+}*/
+
+#page-thanks {
+  width: 26%;
+  position: absolute;
+  left: 3vw;
+  top:25.9vw;
+  opacity: 00;
+  z-index: 1;
+}
+
+#page-thanks:hover {
+  opacity: 100;
+}
+
+
+/* RESIZE COMPONENT
+———————————————————————————— */
+.overlay {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#containment-wrapper {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  margin-left: 0rem;
+}
+
+.demo {
+  border: 3px solid white;
+  cursor: all-scroll;
+  width: 80%;
+}
+
+/* MAP
+———————————————————————————— */
+.map{
+  margin-top: 1.6em;
+}
+
+#map {
+  height: 60%;
+}
+
+/* POINT HOVER COMPONENTS
+———————————————————————————— */
+
+.lol {
+margin-bottom: 20%;
+
+}
+
+
+.bg{
+margin-top: 0.7em;
+}
+
+.pointing{
+margin-top: 5vw;
+}
+
+#bowlingpin {
+  width: 4.5%;
+  position: absolute;
+  top:16vw;
+  left: 18vw;
+  opacity: 100;
+  z-index: 3;
+}
+
+#bowlingpin:hover {
+  content:url("../images/hoverbowlingpin.png");
+}
+
+#cap {
+  width: 8%;
+  position: absolute;
+  top:20vw;
+  left: 19vw;
+  opacity: 100;
+  z-index: 3;
+}
+
+#cap:hover {
+  content:url("../images/hoverhat.png");
+}
+
+#spray {
+  width: 10%;
+  position: absolute;
+  top:20vw;
+  left: 29vw;
+  opacity: 100;
+  z-index: 3;
+}
+
+#spray:hover {
+  content:url("../images/hoverspray.png");
+}
+
+#lamp {
+  width: 13%;
+  position: absolute;
+  top:23vw;
+  left: 12vw;
+  opacity: 100;
+  z-index: 3;
+}
+
+#lamp:hover {
+  content:url("../images/hoverlamp.png");
+}
+
+#teddy {
+  width: 12%;
+  position: absolute;
+  top:28vw;
+  left: 21vw;
+  opacity: 100;
+  z-index: 3;
+}
+
+#teddy:hover {
+  content:url("../images/hoverteddy.png");
+}
+
+#ked {
+  width: 10%;
+  position: absolute;
+  top:31vw;
+  left: 32vw;
+  opacity: 100;
+  z-index: 3;
+}
+
+#ked:hover {
+  content:url("../images/hoverkeds.png");
+}
+
+
+/* MEDIA QUERIES
+———————————————————————————— */
+@media screen and (min-width: 2000px) {
+
+  #page-point {
+    width: 9.2%;
+    left: 28.2vw;
+    top:36vw;
+  }}
+
+@media screen and (max-width: 1366px) {
+  .lol {
+  margin-bottom: 20%;
+
+  }
+  .bg{
+  margin-top: 0.7em;
+  }
+
+  .pointing{
+  margin-top: 5vw;
+  }
+
+  #bowlingpin {
+    width: 4.5%;
+    position: absolute;
+    top:16.5vw;
+    left: 18vw;
+    opacity: 100;
+    z-index: 3;
+  }
+
+  #bowlingpin:hover {
+    content:url("../images/hoverbowlingpin.png");
+  }
+
+  #cap {
+    width: 8%;
+    position: absolute;
+    top:20.8vw;
+    left: 19vw;
+    opacity: 100;
+    z-index: 3;
+  }
+
+  #cap:hover {
+    content:url("../images/hoverhat.png");
+  }
+
+  #spray {
+    width: 10%;
+    position: absolute;
+    top:20.5vw;
+    left: 29vw;
+    opacity: 100;
+    z-index: 3;
+  }
+
+  #spray:hover {
+    content:url("../images/hoverspray.png");
+  }
+
+  #lamp {
+    width: 13%;
+    position: absolute;
+    top:24vw;
+    left: 12vw;
+    opacity: 100;
+    z-index: 3;
+  }
+
+  #lamp:hover {
+    content:url("../images/hoverlamp.png");
+  }
+
+  #teddy {
+    width: 12%;
+    position: absolute;
+    top:28.5vw;
+    left: 21vw;
+    opacity: 100;
+    z-index: 3;
+  }
+
+  #teddy:hover {
+    content:url("../images/hoverteddy.png");
+  }
+
+  #ked {
+    width: 10%;
+    position: absolute;
+    top:31.5vw;
+    left: 32vw;
+    opacity: 100;
+    z-index: 3;
+  }
+
+  #ked:hover {
+    content:url("../images/hoverkeds.png");
+}
+}
+
+@media screen and (max-width: 1024px) {
+  .lol {
+  margin-bottom: 20%;
+
+  }
+  .bg{
+  margin-top: 0.7em;
+  }
+
+  .pointing{
+  margin-top: 5vw;
+  }
+
+  #bowlingpin {
+    width: 4.5%;
+    position: absolute;
+    top:19.5vw;
+    left: 18vw;
+    opacity: 100;
+    z-index: 3;
+  }
+
+  #bowlingpin:hover {
+    content:url("../images/hoverbowlingpin.png");
+  }
+
+  #cap {
+    width: 8%;
+    position: absolute;
+    top:23.8vw;
+    left: 19vw;
+    opacity: 100;
+    z-index: 3;
+  }
+
+  #cap:hover {
+    content:url("../images/hoverhat.png");
+  }
+
+  #spray {
+    width: 10%;
+    position: absolute;
+    top:23.5vw;
+    left: 29vw;
+    opacity: 100;
+    z-index: 3;
+  }
+
+  #spray:hover {
+    content:url("../images/hoverspray.png");
+  }
+
+  #lamp {
+    width: 13%;
+    position: absolute;
+    top:27vw;
+    left: 12vw;
+    opacity: 100;
+    z-index: 3;
+  }
+
+  #lamp:hover {
+    content:url("../images/hoverlamp.png");
+  }
+
+  #teddy {
+    width: 12%;
+    position: absolute;
+    top:31.5vw;
+    left: 21vw;
+    opacity: 100;
+    z-index: 3;
+  }
+
+  #teddy:hover {
+    content:url("../images/hoverteddy.png");
+  }
+
+  #ked {
+    width: 10%;
+    position: absolute;
+    top:34.5vw;
+    left: 32vw;
+    opacity: 100;
+    z-index: 3;
+  }
+
+  #ked:hover {
+    content:url("../images/hoverkeds.png");
+}
+}
