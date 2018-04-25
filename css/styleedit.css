@@ -95,7 +95,7 @@ body {
 /* MARGINS
 ———————————————————————————— */
 .m-10 /*gloabl top spacing*/ {
-  margin: 1.3em 0 ;
+  margin: 2em 0 ;
 }
 
 .m-11 /*bottom img top spacing*/{
@@ -103,7 +103,7 @@ body {
 }
 
 .m-12 /*bottom img top spacing*/{
-  margin: 0em 0 1.3em;
+  margin: 0em 0 2em;
 }
 
 .scroll-type /*bottom scroll type top spacing*/{
@@ -140,7 +140,7 @@ body {
 }
 
 .embed-top{
-  margin-top: 1.3em;
+  margin-top: 2em;
 }
 
 .embed-container iframe, .embed-container object, .embed-container embed {
@@ -284,7 +284,7 @@ border: 1px solid black;
 }
 
 .demo {
-  border: 3px solid white;
+  border: 1px solid white;
   cursor: all-scroll;
   width: 80%;
 }
@@ -405,13 +405,13 @@ margin-top: 5vw;
     top:36vw;
   }}
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1280px) {
   .lol {
   margin-bottom: 20%;
 
   }
   .bg{
-  margin-top: 0.7em;
+  margin-top: 1.2em;
   }
 
   .pointing{
@@ -421,7 +421,7 @@ margin-top: 5vw;
   #bowlingpin {
     width: 4.5%;
     position: absolute;
-    top:16.5vw;
+    top:19.2vw;
     left: 18vw;
     opacity: 100;
     z-index: 3;
@@ -434,7 +434,7 @@ margin-top: 5vw;
   #cap {
     width: 8%;
     position: absolute;
-    top:20.8vw;
+    top:23.5vw;
     left: 19vw;
     opacity: 100;
     z-index: 3;
@@ -447,7 +447,7 @@ margin-top: 5vw;
   #spray {
     width: 10%;
     position: absolute;
-    top:20.5vw;
+    top:23.3vw;
     left: 29vw;
     opacity: 100;
     z-index: 3;
@@ -460,7 +460,7 @@ margin-top: 5vw;
   #lamp {
     width: 13%;
     position: absolute;
-    top:24vw;
+    top:27.6vw;
     left: 12vw;
     opacity: 100;
     z-index: 3;
@@ -473,7 +473,7 @@ margin-top: 5vw;
   #teddy {
     width: 12%;
     position: absolute;
-    top:28.5vw;
+    top:31.3vw;
     left: 21vw;
     opacity: 100;
     z-index: 3;
@@ -486,7 +486,7 @@ margin-top: 5vw;
   #ked {
     width: 10%;
     position: absolute;
-    top:31.5vw;
+    top:34.3vw;
     left: 32vw;
     opacity: 100;
     z-index: 3;
